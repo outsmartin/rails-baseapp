@@ -10,6 +10,7 @@ gem 'bootstrap-will_paginate'  # pagination
 gem "thin"
 
 gem "browser"
+gem "bcrypt-ruby"
 
 
 gem "thin"
@@ -18,6 +19,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass-rails'
+  gem "font-awesome-rails"
   gem "compass-rails"
   # gem 'therubyracer', :platforms => :ruby
 
@@ -36,6 +38,9 @@ group :test do
   gem 'rb-inotify' # linux
   gem "webmock"
   gem "timecop"
+  gem 'capybara' #, :git => 'git://github.com/jnicklas/capybara.git'
+  gem "poltergeist"
+  gem "capybara-mechanize"
 end
 
 
