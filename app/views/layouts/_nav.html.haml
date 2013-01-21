@@ -2,13 +2,16 @@
   .navbar-inner
     .container
       %a.brand{:href => root_path} Image here
-      %ul.pull-right
-        %li Link #1
+      %ul.pull-right.nav
+        %li
+          = link_to "" do
+            %i.icon-trash
+            Link #1
         %li.dropdown
-           %a#admin.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
-             Dropdown
-             %b.caret
-           %ul.dropdown-menu{"aria-labelledby" => "admin", :role => "menu"}
-             %li
-                Dropdown-Link
+          %a#admin.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Dropdown
+            %b.caret
+          %ul.dropdown-menu{"aria-labelledby" => "admin", :role => "menu"}
+            %li
+              = link_to "Link #2", ""
 

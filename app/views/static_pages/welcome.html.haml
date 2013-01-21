@@ -1,2 +1,10 @@
-%h1 StaticPages#welcome
-%p Find me in app/views/static_pages/welcome.html.haml
+- content_for :title, "Welcome to Baseapp"
+.hero-unit
+  %h1 Welcome
+  %p Welcome to this awesome baseapp :)
+
+
+= simple_form_for "blub" do |f|
+  = f.input "blah", as: :string, hint: "hint here", label: "label'd text"
+  = f.submit class: "btn btn-primary"
+
