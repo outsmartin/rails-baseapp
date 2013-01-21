@@ -15,7 +15,7 @@ gem "thin"
 
 gem "browser"
 gem "bcrypt-ruby"
-
+gem "sitemap_generator"
 
 gem "thin"
 

@@ -206,6 +206,8 @@ GEM
     simple_form (2.0.4)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
+    sitemap_generator (3.4)
+      builder
     slop (3.4.3)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -268,6 +270,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sextant
   simple_form
+  sitemap_generator
   sqlite3
   thin
   timecop

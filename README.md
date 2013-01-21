@@ -8,6 +8,7 @@ Rails provides a good set of defaults. Even so, we use some different subsets of
 * Twitter Bootstrap + Font Awesome
 * Will-paginate with bootstrap
 * Chosen select box widget
+* sitemap_generator with config/sitemap.rb for easier search-engine sitemap
 * Sextant ( /rails/routes) until Rails 4
 * Quiet Assets
 * Guard with rspec (and spork: note: spork gem is commented out by default)
