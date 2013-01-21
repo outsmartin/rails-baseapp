@@ -57,8 +57,8 @@ There are some helpers:
 ## Install
 
 ```
-git clone THIS
-cd THIS
+git clone git://github.com/zealot128/rails-baseapp.git
+cd rails-baseapp
 bundle
 rm -rf .git
 ```
