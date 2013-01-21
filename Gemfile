@@ -1,6 +1,10 @@
 source "http://bundler-api.herokuapp.com"
 #source 'https://rubygems.org'
 
+def linux_only(g)
+  gem g, require: RUBY_PLATFORM.include?("linux") && g
+end
+
 gem 'rails', '~> 3.2.11'
 
 
@@ -35,7 +39,7 @@ gem "haml-rails"
 group :test do
   gem "rspec-rails"
   gem "guard-rspec"
-  gem 'rb-inotify' # linux
+  linux_only "rb-inotify"
   gem "webmock"
   gem "timecop"
   gem 'capybara' #, :git => 'git://github.com/jnicklas/capybara.git'
@@ -53,9 +57,6 @@ end
 
 group :development, :test do
   gem "pry-rails"
-
-
-
   # gem "spork-rails"
 end
 

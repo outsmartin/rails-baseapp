@@ -1,5 +1,4 @@
 RSpec.configure do |config|
-  config.tty = true
 
   # Freeze Time using Timecop
   # freeze_time: "2012-09-01 12:12:12"

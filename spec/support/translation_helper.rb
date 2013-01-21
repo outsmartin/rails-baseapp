@@ -3,12 +3,13 @@ module TranslationHelper
 
   extend ActiveSupport::Concern
   included do
+    render_views
     after :each do
       begin
         if defined? response and response
           if response.body
             if response.body.to_s[/translation missing: (.*)"/]
-              fail "Es gibt fehlende Uebersetzung #{$1}"
+              fail "There are missing translations #{$1}"
             end
           end
         end
