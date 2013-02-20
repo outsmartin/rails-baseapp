@@ -1,6 +1,6 @@
 # custom spork port
 $port = 96412
-ignore %r{/public/}, %r{/coverage}, %r{/doc/}, %{/tmp}
+ignore %r{/public/}, %r{/coverage}, %r{/doc/}, %r{/tmp}
 
 group "rspec" do
   guard 'rspec', :version => 2,
