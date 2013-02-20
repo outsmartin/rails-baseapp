@@ -5,6 +5,7 @@ ignore %r{/public/}, %r{/coverage}, %r{/doc/}, %{/tmp}
 group "rspec" do
   guard 'spork', :cucumber => false,
     :test_unit => false,
+    :spring => true,
     :rspec_port => $port,  :wait => 60, :aggressive_kill => false   do
       watch('config/application.rb')
       watch('config/environment.rb')

@@ -57,7 +57,7 @@ end
 
 group :development, :test do
   gem "pry-rails"
-  # gem "spork-rails"
+  gem "spring"
 end
 
 
