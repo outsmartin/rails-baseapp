@@ -1,5 +1,5 @@
-source "http://bundler-api.herokuapp.com"
-#source 'https://rubygems.org'
+#source "http://bundler-api.herokuapp.com"
+source 'https://rubygems.org'
 
 def linux_only(g)
   gem g, require: RUBY_PLATFORM.include?("linux") && g
