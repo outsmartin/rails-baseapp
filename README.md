@@ -17,6 +17,7 @@ Rails provides a good set of defaults. Even so, we use some different subsets of
 * IE9.js for better IE7-9 experience
 * Custom webfont (Without google fonts, keeping everything on the server)
 * browser classes for <html>-Tag ("ie9", "webkit", etc) for easier ie-Styling
+* **Spring** as application preloader for test/spec/rake/generator commands
 
 
 
